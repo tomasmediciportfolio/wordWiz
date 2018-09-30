@@ -6,9 +6,15 @@ namespace wordWiz
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, is this my world! But are you sure? Yes I am! This is also at the line....");
-            Console.WriteLine("This is a new line, I hope");
-            Console.WriteLine("Dette er første test");
-        }
+            wordWizard wizard1 = new wordWizard(); 
+            wizard1.AddWord("hello");
+            wizard1.AddWord("world");
+            wizard1.AddWord("hello");
+
+            wordWizard wizard2 = new wordWizard();
+            wizard2.AddWord("tomas");
+
+            Console.WriteLine(wizard1.ShowList(0));
+         }
     }
 }

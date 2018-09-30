@@ -6,7 +6,7 @@ namespace wordWiz
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, is this my world!");
+            Console.WriteLine("Hello, is this my world! But are you sure");
         }
     }
 }

@@ -6,15 +6,25 @@ namespace wordWiz
     {
         static void Main(string[] args)
         {
-            wordWizard wizard1 = new wordWizard(); 
-            wizard1.AddWord("hello");
-            wizard1.AddWord("world");
-            wizard1.AddWord("hello");
+            wordWizard wizard = new wordWizard(); 
+            //wizard.AddWord("hello");
+            //wizard.AddWord("world");
+            //wizard.AddWord("hi");
+            //wizard.AddWord("thisisaverylongwordthatidontreallyknowifexists");
 
-            wordWizard wizard2 = new wordWizard();
-            wizard2.AddWord("tomas");
+            string text = System.IO.File.ReadAllText(@"testText.txt");
 
-            Console.WriteLine(wizard1.ShowList(0));
-         }
+            //foreach(string word in text)
+            //{
+            //    Console.WriteLine(word);
+            //    // wizard.AddWord(word);
+            //}
+
+            //wordCalculator analysis = wizard.AnalyseText();
+
+            Console.WriteLine("{0}", text);
+            //Console.WriteLine(analysis.HighestLetterNumber);
+            //Console.WriteLine(analysis.LowestLetterNumber);
+        }
     }
 }

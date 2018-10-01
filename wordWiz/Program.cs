@@ -34,8 +34,8 @@ namespace wordWiz
                     Console.WriteLine("There is a total of {0} words in the text of your file. " +
                                       "The word that has the highest occurences, appears {1} time(s) in the text, " +
                                       "and the one with the least occurences, {2} time(s)." +
-                                      "The shortest word has {3} letter(s), " +
-                                      "and the longest {4} letter(s).",
+                                      "The longest word has {3} letter(s), " +
+                                      "and the shortest {4} letter(s).",
                                       analysis.TotalWords, analysis.MostOccurencesNumber, 
                                       analysis.LeastOccurencesNumber, analysis.HighestLetterNumber, 
                                       analysis.LowestLetterNumber);

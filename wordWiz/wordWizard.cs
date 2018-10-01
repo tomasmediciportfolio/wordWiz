@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
+using System.Linq;
 
 
 namespace wordWiz
@@ -9,7 +11,24 @@ namespace wordWiz
     {
         public wordWizard()
         {
-            words = new List<string>(); // List<string>();
+            words = new List<string>();
+        }
+
+        public string TrimText(string text)
+        {
+            text = text.ToLower().Trim();
+            return Regex.Replace(text, @"\s+", " ");
+        }
+
+        public IEnumerable<IGrouping<string, string>> GroupWords(string text)
+        {
+            var wordlist = text.Split(' ').ToList().GroupBy(i => i);
+            return wordlist;
+        } 
+
+        public string[] CreateList(string text)
+        {
+            return text.Split(' ');
         }
 
         public wordCalculator AnalyseText()
@@ -35,6 +54,6 @@ namespace wordWiz
             return words[number];  
         }
 
-        private List<string> words; //List<string> words;     // ensures encapsulation
+        private List<string> words;
     }
 }

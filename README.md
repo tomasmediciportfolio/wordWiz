@@ -1,5 +1,5 @@
 # wordWiz
-Wordcount test program in C# for SimCorp. This program runs in Visual Studio in the following way (See screenshots of each steps in the worddocument): 
+Wordcount test program in C# for SimCorp. This program runs in Visual Studio in the following way (See screenshots of each step in the documentation PDF: WordWiz_documentation): 
   1) Enter the file location (an exception is thrown, if the file is not found), 
   2) The program prints the result, 
   3) Answer if you require a small additional analysis of the text, 
